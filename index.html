@@ -57,51 +57,52 @@
       <!-- Slider de productos/servicios (pondrás tus propias imágenes) -->
       <div class="hero-slider" aria-label="Slider de productos destacados">
         <div class="slider-track" id="sliderTrack">
-          <!-- Slide 1 -->
-          <div class="slide">
-            <div class="slide-info">
-              <div class="slide-tag">Subasta destacada</div>
-              <h3>Estetoscopio Littmann Classic III</h3>
-              <p>Ideal para propedéutica. Certificado y en excelente estado.</p>
-              <div class="slide-price">
-                Puja actual: <strong>$1,850</strong> <span>$2,400</span>
-              </div>
-            </div>
-            <div class="slide-visual">
-              Espacio para tu foto real<br />
-              (estetoscopio)
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="slide">
-            <div class="slide-info">
-              <div class="slide-tag">Oferta relámpago</div>
-              <h3>Mochila ergonómica antirrobo</h3>
-              <p>Compartimento para laptop, recubrimiento impermeable.</p>
-              <div class="slide-price">
-                Cómpralo ya: <strong>$799</strong> <span>$1,050</span>
-              </div>
-            </div>
-            <div class="slide-visual">
-              Espacio para tu foto real<br />
-              (mochila)
-            </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="slide">
-            <div class="slide-info">
-              <div class="slide-tag">Bundle EDUTOOLS</div>
-              <h3>Pack libros de medicina + contabilidad</h3>
-              <p>Perfecto para estudiantes multidisciplinarios. Ejemplares subrayados.</p>
-              <div class="slide-price">
-                Puja actual: <strong>$1,200</strong> <span>$1,800</span>
-              </div>
-            </div>
-            <div class="slide-visual">
-              Espacio para tu foto real<br />
-              (libros)
-            </div>
-          </div>
+          
+<!-- Slide 1 -->
+<div class="slide">
+  <div class="slide-info">
+    <div class="slide-tag">Subasta destacada</div>
+    <h3>Estetoscopio Littmann Classic III</h3>
+    <p>Usado en prácticas de propedéutica, en estuche, muy buen estado.</p>
+    <div class="slide-price">
+      Puja actual: <strong>$1,850</strong> <span>$2,400</span>
+    </div>
+  </div>
+  <div class="slide-visual">
+    <img src="Img/productos/estetoscopio.webp" alt="Estetoscopio Littmann Classic III" />
+  </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide">
+  <div class="slide-info">
+    <div class="slide-tag">Laboratorio en oferta</div>
+    <h3>Set 5 tubos Falcon 50 mL</h3>
+    <p>Tubos graduados con tapa, ideales para prácticas de biología y microbiología.</p>
+    <div class="slide-price">
+      Cómpralo ya: <strong>$120</strong> <span>$180</span>
+    </div>
+  </div>
+  <div class="slide-visual">
+    <img src="Img/productos/tubosDeMuestra.webp" alt="  Set 5 tubos Falcon 50 mL" />
+  </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide">
+  <div class="slide-info">
+    <div class="slide-tag">Kit maker EDUTOOLS</div>
+    <h3>Caja de LEDs y componentes</h3>
+    <p>Caja compacta para proyectos de electrónica, ideal para Arduino y prototipos.</p>
+    <div class="slide-price">
+      Cómpralo ya: <strong>$150</strong> <span>$220</span>
+    </div>
+  </div>
+  <div class="slide-visual">
+    <img src="Img/productos/leds.webp" alt="Caja de LEDs y componentes" />
+  </div>
+</div>
+
         </div>
         <div class="slider-controls">
           <button class="slider-btn" id="prevSlide">&#10094;</button>
@@ -191,102 +192,559 @@
   </section>
 
   <!-- TIENDA VIRTUAL -->
-  <section class="store-section" id="tienda">
-    <div class="store-header">
-      <h2>Mercado EDUTOOLS</h2>
-      <span>+20 productos activos · Pujas actualizadas en tiempo real*</span>
+<section class="store-section" id="tienda">
+  <div class="store-header">
+    <h2>Mercado EDUTOOLS</h2>
+    <span>+22 productos activos · Pujas actualizadas en tiempo real*</span>
+  </div>
+
+  <div class="store-grid" id="productGrid">
+    <!-- 1: Laptop gamer Thunderobot -->
+    <article class="product-card" data-category="laptop" data-price="19000" data-offer="true">
+      <div class="product-badge red">Gaming</div>
+      <div class="product-img">
+         <img src="Img/productos/laptopGamer.webp" alt="laptop Gamer">      
+      </div>
+      <h3 class="product-title">Laptop gamer Thunderobot</h3>
+      <div class="product-meta">
+        <span>Intel Core i · NVIDIA RTX · Ideal para simuladores y proyectos pesados</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.9 (11)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$19,000 <span>$21,000</span></div>
+        <div class="bid-info">Puja máx: <strong>$19,200</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 2: Laptop HP blanca -->
+    <article class="product-card" data-category="laptop" data-price="12000" data-offer="false">
+      <div class="product-badge">Clases en línea</div>
+      <div class="product-img">
+         <img src="Img/productos/laptopHP.webp" alt="laptop HP">      
+      </div>
+      <h3 class="product-title">Laptop HP 14" blanca</h3>
+      <div class="product-meta">
+        <span>Perfecta para apuntes, Moodle, videollamadas y ofimática</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.6 (9)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$12,000 <span>$13,500</span></div>
+        <div class="bid-info">Puja máx: <strong>$12,200</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 3: Teclado Logitech -->
+    <article class="product-card" data-category="periferico" data-price="1100" data-offer="true">
+      <div class="product-badge">Recomendado</div>
+      <div class="product-img">
+         <img src="Img/productos/logitech.webp" alt="Teclado Logitech inalámbrico">      
+      </div>
+      <h3 class="product-title">Teclado Logitech inalámbrico</h3>
+      <div class="product-meta">
+        <span>Silencioso, cómodo para escribir tareas y reportes largos</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.8 (22)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$1,100 <span>$1,400</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 4: Calculadora científica Gadiz -->
+    <article class="product-card" data-category="calculadora" data-price="120" data-offer="true">
+      <div class="product-badge">Top ventas</div>
+      <div class="product-img">
+         <img src="Img/productos/calculadora.webp" alt="Calculadora científica Gadiz">      
+      </div>
+      <h3 class="product-title">Calculadora científica Gadiz</h3>
+      <div class="product-meta">
+        <span>Ideal para cálculo, física y bioestadística</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>5.0 (30)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$120 <span>$180</span></div>
+        <div class="bid-info">Puja máx: <strong>$130</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 5: Kit de LEDs y componentes -->
+    <article class="product-card" data-category="electronica" data-price="80" data-offer="true">
+      <div class="product-badge">Kit</div>
+      <div class="product-img">
+        <img src="Img/productos/leds.webp" alt="Kit de LEDs para proyectos">      
+      </div>
+      <h3 class="product-title">Kit de LEDs para proyectos</h3>
+      <div class="product-meta">
+        <span>Perfecto para prácticas de electrónica y Arduino</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.5 (12)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$80 <span>$120</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 6: Antología poesía mexicana (2 tomos) -->
+    <article class="product-card" data-category="libro-literatura" data-price="600" data-offer="true">
+      <div class="product-badge">Colección</div>
+      <div class="product-img">
+          <img src="Img/productos/antologiaPoesia.webp" alt="Antología general de la poesía mexicana">      
+      </div>
+      <h3 class="product-title">Antología general de la poesía mexicana</h3>
+      <div class="product-meta">
+        <span>2 tomos, ideal para materias de literatura y apreciación artística</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.9 (15)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$600 <span>$750</span></div>
+        <div class="bid-info">Puja máx: <strong>$620</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 7: NatGeo El cerebro -->
+    <article class="product-card" data-category="libro-medicina" data-price="350" data-offer="false">
+      <div class="product-badge">Divulgación</div>
+      <div class="product-img">
+        <img src="Img/productos/libroCerebro.webp" alt="El cerebro – National Geographic">      
+      </div>
+      <h3 class="product-title">El cerebro – National Geographic</h3>
+      <div class="product-meta">
+        <span>Tapa dura, ideal para neurociencias y cultura general</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.8 (9)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$350 <span>$420</span></div>
+        <div class="bid-info">Puja máx: <strong>$360</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 8: Introducción a la criminalística -->
+    <article class="product-card" data-category="libro-criminalistica" data-price="250" data-offer="false">
+      <div class="product-badge">Clásico</div>
+      <div class="product-img">
+          <img src="Img/productos/LibroCriminalistica.webp" alt="Introducción a la criminalística">      
+      </div>
+      <h3 class="product-title">Introducción a la criminalística</h3>
+      <div class="product-meta">
+        <span>Ideal para derecho, criminología y medicina forense</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.4 (10)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$250 <span>$300</span></div>
+        <div class="bid-info">Puja máx: <strong>$260</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 9: Hannah Arendt -->
+    <article class="product-card" data-category="libro-filosofia" data-price="400" data-offer="false">
+      <div class="product-badge">Seminuevo</div>
+      <div class="product-img">
+        <img src="Img/productos/libroHannah.webp" alt="Hannah Arendt – Comprender la filosofía">      
     </div>
+      <h3 class="product-title">Hannah Arendt – Comprender la filosofía</h3>
+      <div class="product-meta">
+        <span>Perfecto para teoría política y humanidades</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.8 (7)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$400 <span>$480</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
 
-    <div class="store-grid" id="productGrid">
-      <!-- 1 -->
-      <article class="product-card" data-category="estetoscopio" data-price="1850" data-offer="true">
-        <div class="product-badge">Oferta</div>
-        <div class="product-img">
-          Foto propia aquí: Estetoscopio Littmann Classic III
+    <!-- 10: Foucault -->
+    <article class="product-card" data-category="libro-filosofia" data-price="400" data-offer="false">
+      <div class="product-badge">Seminuevo</div>
+      <div class="product-img">
+         <img src="Img/productos/LibroFoucault.webp" alt="Foucault – Comprender la filosofía">     
+      </div>
+      <h3 class="product-title">Foucault – Comprender la filosofía</h3>
+      <div class="product-meta">
+        <span>Básico para sociología, filosofía y estudios del poder</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.9 (6)</span>
         </div>
-        <h3 class="product-title">Estetoscopio Littmann Classic III</h3>
-        <div class="product-meta">
-          <span>Estado: Como nuevo</span>
-          <div class="rating">
-            <span class="stars">★★★★★</span>
-            <span>4.9 (32)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$1,850 <span>$2,400</span></div>
-          <div class="bid-info">Puja máx: <strong>$1,900</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$400 <span>$480</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
 
-      <!-- 2 -->
-      <article class="product-card" data-category="estetoscopio" data-price="950" data-offer="false">
-        <div class="product-badge">Recomendado</div>
-        <div class="product-img">
-          Foto propia aquí: Estetoscopio pediátrico verde
+    <!-- 11: Platón -->
+    <article class="product-card" data-category="libro-filosofia" data-price="400" data-offer="false">
+      <div class="product-badge">Seminuevo</div>
+      <div class="product-img">
+         <img src="Img/productos/libroPlaton.webp" alt="Platón – Comprender la filosofía">      
+      </div>
+      <h3 class="product-title">Platón – Comprender la filosofía</h3>
+      <div class="product-meta">
+        <span>Ideal para cursos introductorios de filosofía clásica</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.7 (8)</span>
         </div>
-        <h3 class="product-title">Estetoscopio pediátrico</h3>
-        <div class="product-meta">
-          <span>Estado: Bueno</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.4 (18)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$950 <span>$1,100</span></div>
-          <div class="bid-info">Puja máx: <strong>$990</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$400 <span>$480</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
 
-      <!-- 3 -->
-      <article class="product-card" data-category="mochila" data-price="799" data-offer="true">
-        <div class="product-badge">-20%</div>
-        <div class="product-img">
-          Foto propia aquí: Mochila ergonómica antirrobo
+    <!-- 12: Walter Benjamin -->
+    <article class="product-card" data-category="libro-filosofia" data-price="400" data-offer="false">
+      <div class="product-badge">Seminuevo</div>
+      <div class="product-img">
+        <img src="Img/productos/libroWalter.webp" alt="Walter Benjamin – Comprender la filosofía">      
+      </div>
+      <h3 class="product-title">Walter Benjamin – Comprender la filosofía</h3>
+      <div class="product-meta">
+        <span>Perfecto para teoría crítica, historia y humanidades</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.8 (7)</span>
         </div>
-        <h3 class="product-title">Mochila ergonómica antirrobo</h3>
-        <div class="product-meta">
-          <span>Estado: Nueva</span>
-          <div class="rating">
-            <span class="stars">★★★★★</span>
-            <span>5.0 (12)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$799 <span>$1,050</span></div>
-          <div class="bid-info">Cómpralo ya</div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Seguir</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$400 <span>$480</span></div>
+        <div class="bid-info">Puja máx: <strong>$410</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
 
-      <!-- 4 -->
-      <article class="product-card" data-category="mochila" data-price="520" data-offer="false">
-        <div class="product-badge">Nuevo</div>
-        <div class="product-img">
-          Foto propia aquí: Mochila rodante con compartimentos
+    <!-- 13: 40 Siglos de arte mexicano -->
+    <article class="product-card" data-category="libro-arte" data-price="600" data-offer="true">
+      <div class="product-badge">Coleccionable</div>
+      <div class="product-img">
+         <img src="Img/productos/libroHistoria.webp" alt="40 Siglos de arte mexicano">      
+      </div>
+      <h3 class="product-title">40 siglos de arte mexicano</h3>
+      <div class="product-meta">
+        <span>Gran formato, ideal para historia del arte y proyectos culturales</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>5.0 (5)</span>
         </div>
-        <h3 class="product-title">Mochila rodante para laptop</h3>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$600 <span>$750</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 14: Ética para Amador -->
+    <article class="product-card" data-category="libro-filosofia" data-price="180" data-offer="false">
+      <div class="product-badge">Lectura básica</div>
+      <div class="product-img">
+         <img src="Img/productos/libroEtica.webp" alt="Ética para Amador – Fernando Savater">      
+      </div>
+      <h3 class="product-title">Ética para Amador</h3>
+      <div class="product-meta">
+        <span>Muy usado en preparatoria y primeros semestres</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.6 (18)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$180 <span>$230</span></div>
+        <div class="bid-info">Puja máx: <strong>$190</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 15: Cuentos de Horacio Quiroga -->
+    <article class="product-card" data-category="libro-literatura" data-price="150" data-offer="true">
+      <div class="product-badge">Lecturas</div>
+      <div class="product-img">
+        <img src="Img/productos/libroCuentos.webp" alt="Cuentos de Horacio Quiroga">      
+      </div>
+      <h3 class="product-title">Cuentos – Horacio Quiroga</h3>
+      <div class="product-meta">
+        <span>Libro usado, ideal para materias de narrativa y literatura</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.3 (13)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$150 <span>$200</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 16: Libro de inglés Speak your mind -->
+    <article class="product-card" data-category="libro-idiomas" data-price="250" data-offer="false">
+      <div class="product-badge">Idiomas</div>
+      <div class="product-img">
+         <img src="Img/productos/libroIngles.webp" alt="Speak your mind – Starter">      
+      </div>
+      <h3 class="product-title">Speak your mind – Starter</h3>
+      <div class="product-meta">
+        <span>Ideal para cursos de inglés nivel básico en universidad</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.4 (10)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$250 <span>$320</span></div>
+        <div class="bid-info">Puja máx: <strong>$260</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 17: SMAE 5a edición 2024 -->
+    <article class="product-card" data-category="manual-salud" data-price="650" data-offer="true">
+      <div class="product-badge">Best seller</div>
+      <div class="product-img">
+        <img src="Img/productos/smae.webp" alt="SMAE 5ª edición 2.0 (2024)">      
+      </div>
+      <h3 class="product-title">SMAE 5ª edición 2.0 (2024)</h3>
+      <div class="product-meta">
+        <span>Básico para nutrición clínica y planes de alimentación</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>5.0 (19)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$650 <span>$750</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 18: Revista Nature -->
+    <article class="product-card" data-category="revista" data-price="150" data-offer="false">
+      <div class="product-badge">Paper inspo</div>
+      <div class="product-img">
+         <img src="Img/productos/libroNature.webp" alt="Revista Nature – Feb 2020">      
+      </div>
+      <h3 class="product-title">Revista Nature – Feb 2020</h3>
+      <div class="product-meta">
+        <span>Ideal para practicar lectura científica en inglés</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.5 (6)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$150 <span>$200</span></div>
+        <div class="bid-info">Puja máx: <strong>$160</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 19: Tubos de ensayo pequeños -->
+    <article class="product-card" data-category="laboratorio" data-price="120" data-offer="true">
+      <div class="product-badge">Lab pack</div>
+      <div class="product-img">
+         <img src="Img/productos/tubosDeEnsayo.webp" alt="Pack tubos de ensayo">      
+      </div>
+      <h3 class="product-title">Pack tubos de ensayo</h3>
+      <div class="product-meta">
+        <span>Bolsa con tubos, ideal para prácticas básicas de laboratorio</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.3 (9)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$120 <span>$160</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 20: Tubos de muestra cónicos (50 mL) -->
+    <article class="product-card" data-category="laboratorio" data-price="80" data-offer="false">
+      <div class="product-badge">Pack 5 pzs</div>
+      <div class="product-img">
+        <img src="Img/productos/tubosDeMuestra.webp" alt="Tubos cónicos 50 mL">      
+      </div>
+      <h3 class="product-title">Tubos cónicos 50 mL</h3>
+      <div class="product-meta">
+        <span>Set de 5, útiles para cultivos, centrifugado y muestras</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.4 (5)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$80 <span>$110</span></div>
+        <div class="bid-info">Puja máx: <strong>$85</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+    <!-- 21: Portaobjetos para microscopio -->
+    <article class="product-card" data-category="laboratorio" data-price="90" data-offer="true">
+      <div class="product-badge">Microscopía</div>
+      <div class="product-img">
+        <img src="Img/productos/muestrasDeMicroscopio.webp" alt="Portaobjetos para microscopio">      
+      </div>
+      <h3 class="product-title">Portaobjetos para microscopio (50 pzs)</h3>
+      <div class="product-meta">
+        <span>Caja cerrada, ideal para prácticas de histología y microbiología</span>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.8 (8)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$90 <span>$130</span></div>
+        <div class="bid-info">Cómpralo ya</div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Seguir</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+     <!-- 22: Bicarbonato de sodio SIGMA -->
+    <article class="product-card" data-category="reactivo" data-price="250" data-offer="false">
+      <div class="product-badge">Laboratorio</div>
+      <div class="product-img">
+        <img src="Img/productos/bicarbonato.webp" alt="Bicarbonato de sodio SIGMA">      
+      </div>
+      <h3 class="product-title">Bicarbonato de sodio SIGMA</h3>
+      <div class="product-meta">
+        <span>Tapadera roja, frasco usado en buen estado</span>
+        <div class="rating">
+          <span class="stars">★★★★☆</span>
+          <span>4.1 (5)</span>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-main">$250 <span>$320</span></div>
+        <div class="bid-info">Puja máx: <strong>$260</strong></div>
+      </div>
+      <div class="product-actions">
+        <button class="btn">Pujar</button>
+        <button class="btn primary">Comprar ahora</button>
+      </div>
+    </article>
+
+          <!-- 23 - Baumanómetro -->
+      <article class="product-card" data-category="equipo-medico" data-price="1400" data-offer="true">
+        <div class="product-badge">Kit presión arterial</div>
+        <div class="product-img">
+          <!-- Reemplaza la ruta por la tuya -->
+          <img src="img/productos/baumanometro.webp" alt="Baumanómetro aneroide adulto" />
+        </div>
+        <h3 class="product-title">Baumanómetro aneroide adulto</h3>
         <div class="product-meta">
-          <span>Estado: Nueva</span>
+          <span>Estado: Excelente, recién calibrado</span>
           <div class="rating">
             <span class="stars">★★★★☆</span>
             <span>4.6 (9)</span>
           </div>
         </div>
         <div class="price-row">
-          <div class="price-main">$520 <span>$650</span></div>
-          <div class="bid-info">Puja máx: <strong>$540</strong></div>
+          <div class="price-main">$1,100 <span>$1,950</span></div>
+          <div class="bid-info">Puja máx: <strong>$1,450</strong></div>
         </div>
         <div class="product-actions">
           <button class="btn">Pujar</button>
@@ -294,47 +752,23 @@
         </div>
       </article>
 
-      <!-- 5 -->
-      <article class="product-card" data-category="laptop" data-price="7500" data-offer="true">
-        <div class="product-badge">Oferta</div>
+      <!-- 24 - Estetoscopio cobre -->
+      <article class="product-card" data-category="estetoscopio" data-price="1950" data-offer="true">
+        <div class="product-badge">Edición especial</div>
         <div class="product-img">
-          Foto propia aquí: Laptop ultra ligera para apuntes
+          <img src="img/productos/estetoscopio.webp" alt="Estetoscopio Littmann Classic III cobre" />
         </div>
-        <h3 class="product-title">Laptop 14" para apuntes</h3>
+        <h3 class="product-title">Estetoscopio Littmann Classic III Chocolate</h3>
         <div class="product-meta">
-          <span>Intel i5 · 8GB RAM</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.5 (21)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$7,500 <span>$8,900</span></div>
-          <div class="bid-info">Puja máx: <strong>$7,700</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 6 -->
-      <article class="product-card" data-category="laptop" data-price="11500" data-offer="false">
-        <div class="product-badge red">Gaming</div>
-        <div class="product-img">
-          Foto propia aquí: Laptop para simuladores médicos
-        </div>
-        <h3 class="product-title">Laptop para simuladores</h3>
-        <div class="product-meta">
-          <span>Ryzen 7 · 16GB RAM</span>
+          <span>Estado: Seminuevo, con estuche rígido</span>
           <div class="rating">
             <span class="stars">★★★★★</span>
-            <span>4.9 (11)</span>
+            <span>4.9 (17)</span>
           </div>
         </div>
         <div class="price-row">
-          <div class="price-main">$11,500 <span>$13,200</span></div>
-          <div class="bid-info">Puja máx: <strong>$11,800</strong></div>
+          <div class="price-main">$2,500 <span>$3,100</span></div>
+          <div class="bid-info">Puja máx: <strong>$2,000</strong></div>
         </div>
         <div class="product-actions">
           <button class="btn">Pujar</button>
@@ -342,94 +776,22 @@
         </div>
       </article>
 
-      <!-- 7 -->
-      <article class="product-card" data-category="laptop" data-price="4200" data-offer="true">
-        <div class="product-badge">Refurb</div>
+      <!-- 25 - Kit diagnóstico -->
+      <article class="product-card" data-category="equipo-medico" data-price="3200" data-offer="false">
+        <div class="product-badge">Set completo</div>
         <div class="product-img">
-          Foto propia aquí: Tablet/Laptop 2 en 1
+          <img src="img/productos/estucheDiagnostico.webp" alt="Kit de diagnóstico oto-oftálmico" />
         </div>
-        <h3 class="product-title">Tablet 2 en 1 para clases</h3>
+        <h3 class="product-title">Kit de diagnóstico oto-oftálmico</h3>
         <div class="product-meta">
-          <span>Estado: Semi nuevo</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.3 (14)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$4,200 <span>$5,000</span></div>
-          <div class="bid-info">Cómpralo ya</div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Seguir</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 8 -->
-      <article class="product-card" data-category="calculadora" data-price="650" data-offer="true">
-        <div class="product-badge">Top ventas</div>
-        <div class="product-img">
-          Foto propia aquí: Calculadora científica fx-991
-        </div>
-        <h3 class="product-title">Calculadora científica fx-991</h3>
-        <div class="product-meta">
-          <span>Ideal para cálculo y física</span>
+          <span>Incluye otoscopio y oftalmoscopio</span>
           <div class="rating">
             <span class="stars">★★★★★</span>
-            <span>5.0 (30)</span>
+            <span>4.8 (12)</span>
           </div>
         </div>
         <div class="price-row">
-          <div class="price-main">$650 <span>$780</span></div>
-          <div class="bid-info">Puja máx: <strong>$670</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 9 -->
-      <article class="product-card" data-category="calculadora" data-price="980" data-offer="false">
-        <div class="product-badge">Nuevo</div>
-        <div class="product-img">
-          Foto propia aquí: Calculadora financiera
-        </div>
-        <h3 class="product-title">Calculadora financiera</h3>
-        <div class="product-meta">
-          <span>Para contabilidad y economía</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.6 (8)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$980 <span>$1,150</span></div>
-          <div class="bid-info">Puja máx: <strong>$1,000</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 10 -->
-      <article class="product-card" data-category="libro-conta" data-price="420" data-offer="true">
-        <div class="product-badge">Bundle</div>
-        <div class="product-img">
-          Foto propia aquí: Libro de contabilidad I
-        </div>
-        <h3 class="product-title">Libro Contabilidad I</h3>
-        <div class="product-meta">
-          <span>Edición reciente</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.4 (10)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$420 <span>$550</span></div>
+          <div class="price-main">$3,200<span>$3,800</span></div>
           <div class="bid-info">Cómpralo ya</div>
         </div>
         <div class="product-actions">
@@ -438,247 +800,9 @@
         </div>
       </article>
 
-      <!-- 11 -->
-      <article class="product-card" data-category="libro-conta" data-price="590" data-offer="false">
-        <div class="product-badge">Recomendado</div>
-        <div class="product-img">
-          Foto propia aquí: Libro de contabilidad avanzada
-        </div>
-        <h3 class="product-title">Libro Contabilidad avanzada</h3>
-        <div class="product-meta">
-          <span>Incluye casos prácticos</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.2 (7)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$590 <span>$720</span></div>
-          <div class="bid-info">Puja máx: <strong>$610</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
+  </div>
+</section>
 
-      <!-- 12 -->
-      <article class="product-card" data-category="libro-medicina" data-price="980" data-offer="true">
-        <div class="product-badge">Best seller</div>
-        <div class="product-img">
-          Foto propia aquí: Libro de anatomía
-        </div>
-        <h3 class="product-title">Libro de Anatomía</h3>
-        <div class="product-meta">
-          <span>Con atlas a color</span>
-          <div class="rating">
-            <span class="stars">★★★★★</span>
-            <span>5.0 (19)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$980 <span>$1,250</span></div>
-          <div class="bid-info">Puja máx: <strong>$1,000</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 13 -->
-      <article class="product-card" data-category="libro-medicina" data-price="860" data-offer="true">
-        <div class="product-badge">Oferta</div>
-        <div class="product-img">
-          Foto propia aquí: Libro de fisiología
-        </div>
-        <h3 class="product-title">Libro de Fisiología</h3>
-        <div class="product-meta">
-          <span>Subrayado con resaltador</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.3 (13)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$860 <span>$1,050</span></div>
-          <div class="bid-info">Cómpralo ya</div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Seguir</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 14 -->
-      <article class="product-card" data-category="libro-medicina" data-price="790" data-offer="false">
-        <div class="product-badge">Nuevo</div>
-        <div class="product-img">
-          Foto propia aquí: Libro de farmacología
-        </div>
-        <h3 class="product-title">Libro de Farmacología</h3>
-        <div class="product-meta">
-          <span>Incluye acceso digital</span>
-          <div class="rating">
-            <span class="stars">★★★★★</span>
-            <span>4.8 (9)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$790 <span>$920</span></div>
-          <div class="bid-info">Puja máx: <strong>$810</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 15 -->
-      <article class="product-card" data-category="otros" data-price="350" data-offer="true">
-        <div class="product-badge">Kit</div>
-        <div class="product-img">
-          Foto propia aquí: Kit disector
-        </div>
-        <h3 class="product-title">Kit disector completo</h3>
-        <div class="product-meta">
-          <span>Incluye estuche</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.2 (16)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$350 <span>$480</span></div>
-          <div class="bid-info">Cómpralo ya</div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Seguir</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 16 -->
-      <article class="product-card" data-category="otros" data-price="280" data-offer="false">
-        <div class="product-badge">Nuevo</div>
-        <div class="product-img">
-          Foto propia aquí: Bata médica
-        </div>
-        <h3 class="product-title">Bata médica unisex</h3>
-        <div class="product-meta">
-          <span>Talla M</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.5 (5)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$280 <span>$350</span></div>
-          <div class="bid-info">Puja máx: <strong>$300</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 17 -->
-      <article class="product-card" data-category="otros" data-price="120" data-offer="true">
-        <div class="product-badge">Outlet</div>
-        <div class="product-img">
-          Foto propia aquí: Caja de colores
-        </div>
-        <h3 class="product-title">Caja de colores profesionales</h3>
-        <div class="product-meta">
-          <span>24 piezas</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.1 (6)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$120 <span>$180</span></div>
-          <div class="bid-info">Cómpralo ya</div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Seguir</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 18 -->
-      <article class="product-card" data-category="otros" data-price="85" data-offer="false">
-        <div class="product-badge">Pack</div>
-        <div class="product-img">
-          Foto propia aquí: Cuaderno profesional
-        </div>
-        <h3 class="product-title">Pack 3 cuadernos profesionales</h3>
-        <div class="product-meta">
-          <span>Rayados y cuadro grande</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.0 (4)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$85 <span>$120</span></div>
-          <div class="bid-info">Puja máx: <strong>$90</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 19 -->
-      <article class="product-card" data-category="otros" data-price="260" data-offer="true">
-        <div class="product-badge">Oferta</div>
-        <div class="product-img">
-          Foto propia aquí: Organizador de escritorio
-        </div>
-        <h3 class="product-title">Organizador de escritorio</h3>
-        <div class="product-meta">
-          <span>Incluye porta notas</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.3 (3)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$260 <span>$320</span></div>
-          <div class="bid-info">Cómpralo ya</div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Seguir</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-
-      <!-- 20 -->
-      <article class="product-card" data-category="otros" data-price="190" data-offer="true">
-        <div class="product-badge">Night study</div>
-        <div class="product-img">
-          Foto propia aquí: Lámpara de escritorio
-        </div>
-        <h3 class="product-title">Lámpara de escritorio LED</h3>
-        <div class="product-meta">
-          <span>Luz blanca y cálida</span>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span>4.2 (6)</span>
-          </div>
-        </div>
-        <div class="price-row">
-          <div class="price-main">$190 <span>$240</span></div>
-          <div class="bid-info">Puja máx: <strong>$200</strong></div>
-        </div>
-        <div class="product-actions">
-          <button class="btn">Pujar</button>
-          <button class="btn primary">Comprar ahora</button>
-        </div>
-      </article>
-    </div>
-  </section>
 
   <!-- INFO ADICIONAL + FAQ -->
   <section class="info-section">
@@ -789,19 +913,30 @@
     </div>
 
     <div class="location-card">
-      <h2>Ubicación física</h2>
-      <span class="location-tag">Showroom académico</span>
-      <p><strong>EDUTOOLS HQ (demo)</strong></p>
-      <p>
-        Campus Universitario · Edificio de Ciencias Exactas e Ingenieria<br />
-        Aula de Innovación · Planta baja
-      </p>
-      <p>Horario demostrativo: Lunes a Viernes, 9:00 a 14:00 hrs.</p>
-      <div class="map-placeholder">
-        Aquí puedes incrustar un mapa de Google Maps<br />
-        (por ahora es solo un marcador de ejemplo).
-      </div>
-    </div>
+  <h2>Ubicación física</h2>
+  <span class="location-tag">Showroom académico</span>
+  <p><strong>EDUTOOLS HQ (demo)</strong></p>
+  <p>
+    Campus Universitario · Edificio de Ciencias Exactas e Ingenieria<br />
+    Aula de Innovación · Planta baja
+  </p>
+  <p>Horario demostrativo: Lunes a Viernes, 9:00 a 14:00 hrs.</p>
+
+  <!-- Video embedido aquí -->
+  <div class="video-container">
+    <iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/BSED0pL4VvI?si=lL-T7fxR5v0FyFUi" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+</iframe>
+  </div>
+</div>
+
   </section>
 
   <!-- MODAL PRODUCTO -->
