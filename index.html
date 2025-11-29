@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>EDUTOOLS - Bazar de Herramientas Escolares</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav-container" id="navbar">
+      <div class="logo">
+        <div class="logo-mark">E</div>
+        <div>
+          <div class="logo-text-main">EDUTOOLS</div>
+          <div class="logo-text-sub">Bazar de herramientas escolares</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#quienes-somos">¿Quiénes somos?</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contáctame</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="nav-btn" id="openLogin">Iniciar sesión</button>
+<button class="nav-btn primary" id="openPublish">Publicar producto</button>
+     </div>
+
+
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO + SLIDER + INFO PAGES -->
+  <section class="hero" id="inicio">
+    <div class="hero-main">
+      <div>
+        <div class="hero-tag">Bazar académico EDUTOOLS</div>
+        <h1 class="hero-title">Compra y subasta tus herramientas escolares</h1>
+        <p class="hero-subtitle">
+          Estetoscopios, mochilas, laptops, libros y más. EDUTOOLS conecta a estudiantes que venden y compran material escolar de forma segura.
+        </p>
+        <div class="hero-badge-row">
+          <div class="pill green">Pujas en tiempo real</div>
+          <div class="pill">Verificado por estudiantes</div>
+          <div class="pill">Ofertas desde $99 MXN</div>
+        </div>
+      </div>
+
+      <!-- Slider de productos/servicios (pondrás tus propias imágenes) -->
+      <div class="hero-slider" aria-label="Slider de productos destacados">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="slide-info">
+              <div class="slide-tag">Subasta destacada</div>
+              <h3>Estetoscopio Littmann Classic III</h3>
+              <p>Ideal para propedéutica. Certificado y en excelente estado.</p>
+              <div class="slide-price">
+                Puja actual: <strong>$1,850</strong> <span>$2,400</span>
+              </div>
+            </div>
+            <div class="slide-visual">
+              Espacio para tu foto real<br />
+              (estetoscopio)
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="slide-info">
+              <div class="slide-tag">Oferta relámpago</div>
+              <h3>Mochila ergonómica antirrobo</h3>
+              <p>Compartimento para laptop, recubrimiento impermeable.</p>
+              <div class="slide-price">
+                Cómpralo ya: <strong>$799</strong> <span>$1,050</span>
+              </div>
+            </div>
+            <div class="slide-visual">
+              Espacio para tu foto real<br />
+              (mochila)
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="slide-info">
+              <div class="slide-tag">Bundle EDUTOOLS</div>
+              <h3>Pack libros de medicina + contabilidad</h3>
+              <p>Perfecto para estudiantes multidisciplinarios. Ejemplares subrayados.</p>
+              <div class="slide-price">
+                Puja actual: <strong>$1,200</strong> <span>$1,800</span>
+              </div>
+            </div>
+            <div class="slide-visual">
+              Espacio para tu foto real<br />
+              (libros)
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevSlide">&#10094;</button>
+          <button class="slider-btn" id="nextSlide">&#10095;</button>
+          <div class="slider-dots">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info "páginas": quiénes somos, visión, misión, políticas de calidad -->
+    <aside class="hero-side" id="quienes-somos">
+      <article class="info-card">
+        <h3>¿Quiénes somos?</h3>
+        <p>
+          EDUTOOLS es un bazar digital creado por y para estudiantes, donde puedes comprar, vender o subastar herramientas escolares de forma segura.
+        </p>
+        <div class="info-pill-row">
+          <span>Estudiantes</span>
+          <span>Docentes</span>
+          <span>Profesionales en formación</span>
+        </div>
+        <a href="#contacto" class="link-small">Conoce más sobre nuestro equipo →</a>
+      </article>
+
+      <article class="info-card">
+        <h3>Visión</h3>
+        <p>
+          Ser el marketplace académico líder en Latinoamérica para herramientas escolares nuevas y seminuevas.
+        </p>
+        <h3 style="margin-top:0.5rem;">Misión</h3>
+        <p>
+          Facilitar el acceso a material de calidad mediante un sistema de pujas y ventas transparente, justo y accesible.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h3>Políticas de calidad</h3>
+        <ul style="font-size:0.8rem; color:#4b5563; margin-left:1rem;">
+          <li>Verificación básica del perfil del vendedor.</li>
+          <li>Descripción clara del estado del producto.</li>
+          <li>Prohibición de productos falsificados o en mal estado crítico.</li>
+          <li>Soporte al usuario vía chat dentro del sitio.</li>
+        </ul>
+      </article>
+    </aside>
+  </section>
+
+  <!-- FILTROS -->
+  <section class="filters">
+    <div class="filters-bar">
+      <span class="filters-title">Filtrar bazar</span>
+
+      <div class="filter-group">
+        <span>Categoría:</span>
+        <select class="filter-select" id="categoryFilter">
+          <option value="todos">Todos</option>
+          <option value="estetoscopio">Estetoscopios</option>
+          <option value="mochila">Mochilas</option>
+          <option value="laptop">Laptops/Tablets</option>
+          <option value="calculadora">Calculadoras</option>
+          <option value="libro-conta">Libros contabilidad</option>
+          <option value="libro-medicina">Libros medicina</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <span>Ordenar:</span>
+        <select class="filter-select" id="sortFilter">
+          <option value="relevante">Más relevante</option>
+          <option value="precio-asc">Precio: menor a mayor</option>
+          <option value="precio-desc">Precio: mayor a menor</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <span>Buscar:</span>
+        <input type="text" class="filter-input" id="searchInput" placeholder="Ej: estetoscopio, laptop..." />
+      </div>
+
+      <button class="chip active" id="offerChip">Solo ofertas</button>
+    </div>
+  </section>
+
+  <!-- TIENDA VIRTUAL -->
+  <section class="store-section" id="tienda">
+    <div class="store-header">
+      <h2>Mercado EDUTOOLS</h2>
+      <span>+20 productos activos · Pujas actualizadas en tiempo real*</span>
+    </div>
+
+    <div class="store-grid" id="productGrid">
+      <!-- 1 -->
+      <article class="product-card" data-category="estetoscopio" data-price="1850" data-offer="true">
+        <div class="product-badge">Oferta</div>
+        <div class="product-img">
+          Foto propia aquí: Estetoscopio Littmann Classic III
+        </div>
+        <h3 class="product-title">Estetoscopio Littmann Classic III</h3>
+        <div class="product-meta">
+          <span>Estado: Como nuevo</span>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span>4.9 (32)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$1,850 <span>$2,400</span></div>
+          <div class="bid-info">Puja máx: <strong>$1,900</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="product-card" data-category="estetoscopio" data-price="950" data-offer="false">
+        <div class="product-badge">Recomendado</div>
+        <div class="product-img">
+          Foto propia aquí: Estetoscopio pediátrico verde
+        </div>
+        <h3 class="product-title">Estetoscopio pediátrico</h3>
+        <div class="product-meta">
+          <span>Estado: Bueno</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.4 (18)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$950 <span>$1,100</span></div>
+          <div class="bid-info">Puja máx: <strong>$990</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="product-card" data-category="mochila" data-price="799" data-offer="true">
+        <div class="product-badge">-20%</div>
+        <div class="product-img">
+          Foto propia aquí: Mochila ergonómica antirrobo
+        </div>
+        <h3 class="product-title">Mochila ergonómica antirrobo</h3>
+        <div class="product-meta">
+          <span>Estado: Nueva</span>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span>5.0 (12)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$799 <span>$1,050</span></div>
+          <div class="bid-info">Cómpralo ya</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Seguir</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="product-card" data-category="mochila" data-price="520" data-offer="false">
+        <div class="product-badge">Nuevo</div>
+        <div class="product-img">
+          Foto propia aquí: Mochila rodante con compartimentos
+        </div>
+        <h3 class="product-title">Mochila rodante para laptop</h3>
+        <div class="product-meta">
+          <span>Estado: Nueva</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.6 (9)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$520 <span>$650</span></div>
+          <div class="bid-info">Puja máx: <strong>$540</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="product-card" data-category="laptop" data-price="7500" data-offer="true">
+        <div class="product-badge">Oferta</div>
+        <div class="product-img">
+          Foto propia aquí: Laptop ultra ligera para apuntes
+        </div>
+        <h3 class="product-title">Laptop 14" para apuntes</h3>
+        <div class="product-meta">
+          <span>Intel i5 · 8GB RAM</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.5 (21)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$7,500 <span>$8,900</span></div>
+          <div class="bid-info">Puja máx: <strong>$7,700</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="product-card" data-category="laptop" data-price="11500" data-offer="false">
+        <div class="product-badge red">Gaming</div>
+        <div class="product-img">
+          Foto propia aquí: Laptop para simuladores médicos
+        </div>
+        <h3 class="product-title">Laptop para simuladores</h3>
+        <div class="product-meta">
+          <span>Ryzen 7 · 16GB RAM</span>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span>4.9 (11)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$11,500 <span>$13,200</span></div>
+          <div class="bid-info">Puja máx: <strong>$11,800</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="product-card" data-category="laptop" data-price="4200" data-offer="true">
+        <div class="product-badge">Refurb</div>
+        <div class="product-img">
+          Foto propia aquí: Tablet/Laptop 2 en 1
+        </div>
+        <h3 class="product-title">Tablet 2 en 1 para clases</h3>
+        <div class="product-meta">
+          <span>Estado: Semi nuevo</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.3 (14)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$4,200 <span>$5,000</span></div>
+          <div class="bid-info">Cómpralo ya</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Seguir</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="product-card" data-category="calculadora" data-price="650" data-offer="true">
+        <div class="product-badge">Top ventas</div>
+        <div class="product-img">
+          Foto propia aquí: Calculadora científica fx-991
+        </div>
+        <h3 class="product-title">Calculadora científica fx-991</h3>
+        <div class="product-meta">
+          <span>Ideal para cálculo y física</span>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span>5.0 (30)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$650 <span>$780</span></div>
+          <div class="bid-info">Puja máx: <strong>$670</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="product-card" data-category="calculadora" data-price="980" data-offer="false">
+        <div class="product-badge">Nuevo</div>
+        <div class="product-img">
+          Foto propia aquí: Calculadora financiera
+        </div>
+        <h3 class="product-title">Calculadora financiera</h3>
+        <div class="product-meta">
+          <span>Para contabilidad y economía</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.6 (8)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$980 <span>$1,150</span></div>
+          <div class="bid-info">Puja máx: <strong>$1,000</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="product-card" data-category="libro-conta" data-price="420" data-offer="true">
+        <div class="product-badge">Bundle</div>
+        <div class="product-img">
+          Foto propia aquí: Libro de contabilidad I
+        </div>
+        <h3 class="product-title">Libro Contabilidad I</h3>
+        <div class="product-meta">
+          <span>Edición reciente</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.4 (10)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$420 <span>$550</span></div>
+          <div class="bid-info">Cómpralo ya</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Seguir</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="product-card" data-category="libro-conta" data-price="590" data-offer="false">
+        <div class="product-badge">Recomendado</div>
+        <div class="product-img">
+          Foto propia aquí: Libro de contabilidad avanzada
+        </div>
+        <h3 class="product-title">Libro Contabilidad avanzada</h3>
+        <div class="product-meta">
+          <span>Incluye casos prácticos</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.2 (7)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$590 <span>$720</span></div>
+          <div class="bid-info">Puja máx: <strong>$610</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="product-card" data-category="libro-medicina" data-price="980" data-offer="true">
+        <div class="product-badge">Best seller</div>
+        <div class="product-img">
+          Foto propia aquí: Libro de anatomía
+        </div>
+        <h3 class="product-title">Libro de Anatomía</h3>
+        <div class="product-meta">
+          <span>Con atlas a color</span>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span>5.0 (19)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$980 <span>$1,250</span></div>
+          <div class="bid-info">Puja máx: <strong>$1,000</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="product-card" data-category="libro-medicina" data-price="860" data-offer="true">
+        <div class="product-badge">Oferta</div>
+        <div class="product-img">
+          Foto propia aquí: Libro de fisiología
+        </div>
+        <h3 class="product-title">Libro de Fisiología</h3>
+        <div class="product-meta">
+          <span>Subrayado con resaltador</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.3 (13)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$860 <span>$1,050</span></div>
+          <div class="bid-info">Cómpralo ya</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Seguir</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="product-card" data-category="libro-medicina" data-price="790" data-offer="false">
+        <div class="product-badge">Nuevo</div>
+        <div class="product-img">
+          Foto propia aquí: Libro de farmacología
+        </div>
+        <h3 class="product-title">Libro de Farmacología</h3>
+        <div class="product-meta">
+          <span>Incluye acceso digital</span>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span>4.8 (9)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$790 <span>$920</span></div>
+          <div class="bid-info">Puja máx: <strong>$810</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="product-card" data-category="otros" data-price="350" data-offer="true">
+        <div class="product-badge">Kit</div>
+        <div class="product-img">
+          Foto propia aquí: Kit disector
+        </div>
+        <h3 class="product-title">Kit disector completo</h3>
+        <div class="product-meta">
+          <span>Incluye estuche</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.2 (16)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$350 <span>$480</span></div>
+          <div class="bid-info">Cómpralo ya</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Seguir</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="product-card" data-category="otros" data-price="280" data-offer="false">
+        <div class="product-badge">Nuevo</div>
+        <div class="product-img">
+          Foto propia aquí: Bata médica
+        </div>
+        <h3 class="product-title">Bata médica unisex</h3>
+        <div class="product-meta">
+          <span>Talla M</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.5 (5)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$280 <span>$350</span></div>
+          <div class="bid-info">Puja máx: <strong>$300</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="product-card" data-category="otros" data-price="120" data-offer="true">
+        <div class="product-badge">Outlet</div>
+        <div class="product-img">
+          Foto propia aquí: Caja de colores
+        </div>
+        <h3 class="product-title">Caja de colores profesionales</h3>
+        <div class="product-meta">
+          <span>24 piezas</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.1 (6)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$120 <span>$180</span></div>
+          <div class="bid-info">Cómpralo ya</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Seguir</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="product-card" data-category="otros" data-price="85" data-offer="false">
+        <div class="product-badge">Pack</div>
+        <div class="product-img">
+          Foto propia aquí: Cuaderno profesional
+        </div>
+        <h3 class="product-title">Pack 3 cuadernos profesionales</h3>
+        <div class="product-meta">
+          <span>Rayados y cuadro grande</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.0 (4)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$85 <span>$120</span></div>
+          <div class="bid-info">Puja máx: <strong>$90</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 19 -->
+      <article class="product-card" data-category="otros" data-price="260" data-offer="true">
+        <div class="product-badge">Oferta</div>
+        <div class="product-img">
+          Foto propia aquí: Organizador de escritorio
+        </div>
+        <h3 class="product-title">Organizador de escritorio</h3>
+        <div class="product-meta">
+          <span>Incluye porta notas</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.3 (3)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$260 <span>$320</span></div>
+          <div class="bid-info">Cómpralo ya</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Seguir</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+
+      <!-- 20 -->
+      <article class="product-card" data-category="otros" data-price="190" data-offer="true">
+        <div class="product-badge">Night study</div>
+        <div class="product-img">
+          Foto propia aquí: Lámpara de escritorio
+        </div>
+        <h3 class="product-title">Lámpara de escritorio LED</h3>
+        <div class="product-meta">
+          <span>Luz blanca y cálida</span>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span>4.2 (6)</span>
+          </div>
+        </div>
+        <div class="price-row">
+          <div class="price-main">$190 <span>$240</span></div>
+          <div class="bid-info">Puja máx: <strong>$200</strong></div>
+        </div>
+        <div class="product-actions">
+          <button class="btn">Pujar</button>
+          <button class="btn primary">Comprar ahora</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- INFO ADICIONAL + FAQ -->
+  <section class="info-section">
+    <div class="info-block">
+      <h2>¿Cómo funciona EDUTOOLS?</h2>
+      <p>
+        Publica tus herramientas escolares, define un precio de salida y activa el modo “puja” o “cómpralo ya”. Los
+        estudiantes pueden ofertar y tú decides cuándo aceptar.
+      </p>
+      <p>
+        Todos los productos deben contar con fotografías reales, descripción del estado y, de preferencia, comprobante
+        de compra si se tiene.
+      </p>
+
+      <h2 style="margin-top:1rem;">Compromiso con la calidad</h2>
+      <ul>
+        <li>Revisión manual aleatoria de publicaciones sospechosas.</li>
+        <li>Reportes visibles de usuarios con baja reputación.</li>
+        <li>Valoración de productos y vendedores con sistema de estrellas.</li>
+        <li>Política de cero tolerancia a fraudes o material falsificado.</li>
+      </ul>
+    </div>
+
+    <div class="faq-section" id="faq">
+      <h3>Preguntas frecuentes</h3>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>¿Puedo vender productos usados?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Sí. EDUTOOLS está pensado justamente para dar segunda vida a herramientas escolares en buen estado. Solo
+          asegúrate de describir claramente el uso y el estado.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>¿Cómo funciona la dinamica de puja?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          El vendedor establece un precio de salida. Los compradores pueden ofertar montos mayores. El vendedor puede
+          aceptar la mejor oferta en cualquier momento o esperar nuevas pujas dentro del tiempo definido.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>¿EDUTOOLS cobra comisión?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          En esta versión académica, el uso de la plataforma es demostrativo. En una versión real, podría cobrarse una
+          pequeña comisión por venta concretada para sostener el servicio.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>¿Qué pasa si recibo un producto distinto?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Podrás reportarlo mediante el formulario de contacto y el sistema de chat. Nuestra política de calidad
+          prioriza proteger al comprador y sancionar a vendedores que incumplan.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO + UBICACIÓN -->
+  <section class="contact-section" id="contacto">
+    <div class="contact-card">
+      <h2>Formulario de “contáctame”</h2>
+      <p class="contact-help">
+        ¿Tienes dudas sobre una puja, un producto o quieres sugerir una mejora? Escríbenos y te respondemos lo antes posible.
+      </p>
+
+      <form class="contact-form">
+        <div class="field-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" placeholder="Ej. Jocelyn Duarte" required />
+        </div>
+        <div class="field-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required />
+        </div>
+        <div class="field-group">
+          <label for="tipo">Soy...</label>
+          <select id="tipo">
+            <option value="comprador">Comprador</option>
+            <option value="vendedor">Vendedor</option>
+            <option value="ambos">Ambos</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="Ej. Duda sobre puja en laptop" />
+        </div>
+        <div class="field-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" placeholder="Cuéntanos qué necesitas..."></textarea>
+        </div>
+        <button type="submit" class="btn primary">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <div class="location-card">
+      <h2>Ubicación física</h2>
+      <span class="location-tag">Showroom académico</span>
+      <p><strong>EDUTOOLS HQ (demo)</strong></p>
+      <p>
+        Campus Universitario · Edificio de Ciencias Exactas e Ingenieria<br />
+        Aula de Innovación · Planta baja
+      </p>
+      <p>Horario demostrativo: Lunes a Viernes, 9:00 a 14:00 hrs.</p>
+      <div class="map-placeholder">
+        Aquí puedes incrustar un mapa de Google Maps<br />
+        (por ahora es solo un marcador de ejemplo).
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL PRODUCTO -->
+<div class="product-modal-overlay" id="productOverlay">
+  <div class="product-modal" id="productModal">
+    <button class="modal-close" id="modalClose">×</button>
+
+    <div class="modal-main">
+      <div class="modal-image" id="modalImage">
+        <!-- Aquí se copia la imagen del producto -->
+      </div>
+
+      <div class="modal-content">
+        <span class="modal-badge" id="modalBadge"></span>
+        <h3 id="modalTitle"></h3>
+        <p class="modal-sub" id="modalSubtitle"></p>
+
+        <div class="modal-price-row">
+          <span class="modal-price" id="modalPrice"></span>
+          <span class="modal-bid" id="modalBid"></span>
+        </div>
+
+        <div class="modal-offers">
+          <h4>Historial de ofertas</h4>
+          <ul id="modalOffersList">
+            <!-- Se llena con JS -->
+          </ul>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn" data-modal-action="seguir">Seguir</button>
+          <button class="btn" data-modal-action="pujar">Pujar</button>
+          <button class="btn primary" data-modal-action="comprar">Comprar ahora</button>
+        </div>
+
+        <!-- 👇 NUEVO: zona de mensajes -->
+        <div class="modal-feedback" id="modalFeedback"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL INICIO DE SESIÓN -->
+<div class="login-overlay" id="loginOverlay">
+  <div class="login-modal">
+    <button class="login-close" id="loginClose">×</button>
+
+    <div class="login-header">
+  <h2>Inicia sesión en EDUTOOLS</h2>
+  <p>Accede con tu correo institucional, usuario o código escolar.</p>
+  <p class="login-extra-msg" id="loginExtraMsg"></p>
+  <div class="login-extra-bar" id="loginExtraBar"></div>
+</div>
+
+
+
+    <form class="login-form" id="loginForm">
+      <div class="field-group">
+        <label for="loginUser">Usuario</label>
+        <input
+          type="text"
+          id="loginUser"
+          placeholder="correo@alumnos.udg.mx, usuario o código escolar"
+          required
+        />
+      </div>
+
+      <div class="field-group">
+        <label for="loginPass">Contraseña</label>
+        <input
+          type="password"
+          id="loginPass"
+          placeholder="Ingresa tu contraseña"
+          required
+        />
+      </div>
+
+      <div class="login-extra">
+        <label class="remember-check">
+          <input type="checkbox" id="loginRemember" />
+          <span>Recuérdame en este dispositivo</span>
+        </label>
+        <button type="submit" class="btn primary login-submit">Iniciar sesión</button>
+      </div>
+
+      <p class="login-hint">
+        Uso demostrativo: en una versión real validaríamos tus datos con la plataforma de la universidad.
+      </p>
+
+
+      <div class="login-feedback" id="loginFeedback"></div>
+    </form>
+  </div>
+</div>
+
+
+<!-- MODAL PUBLICAR PRODUCTO -->
+<div class="publish-overlay" id="publishOverlay">
+  <div class="publish-modal">
+    <button class="publish-close" id="publishClose">×</button>
+
+    <div class="publish-header">
+      <h2>Publicar producto</h2>
+      <p>Sube tus herramientas escolares y súmalas al bazar EDUTOOLS.</p>
+    </div>
+
+    <form class="publish-form" id="publishForm">
+      <div class="field-group">
+        <label for="publishTitle">Título del producto</label>
+        <input
+          type="text"
+          id="publishTitle"
+          placeholder='Ej. "Mochila rodante para laptop"'
+          required
+        />
+      </div>
+
+      <div class="field-group">
+        <label for="publishPrice">Precio inicial (MXN)</label>
+        <input
+          type="number"
+          id="publishPrice"
+          placeholder="Ej. 520"
+          min="0"
+          step="10"
+          required
+        />
+      </div>
+
+      <div class="field-group">
+        <label>Imágenes del producto</label>
+        <div class="dropzone" id="imageDropzone">
+          <div class="drop-inner">
+            <p class="drop-desktop">Arrastra y suelta tus fotos aquí</p>
+            <p class="drop-mobile">Toca el botón para subir fotos</p>
+
+            <button type="button" class="btn outline" id="uploadBtn">
+              Subir imágenes
+            </button>
+
+            <span class="drop-info" id="dropInfo">
+              No se han seleccionado imágenes.
+            </span>
+          </div>
+          <input
+            type="file"
+            id="imageInput"
+            multiple
+            accept="image/*"
+            hidden
+          />
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label for="publishDescription">Descripción</label>
+        <textarea
+          id="publishDescription"
+          rows="3"
+          placeholder="Describe estado, detalles, marca, tiempo de uso..."
+          required
+        ></textarea>
+      </div>
+
+      <div class="field-group">
+        <label for="publishTags">Categorías / tags</label>
+        <input
+          type="text"
+          id="publishTags"
+          placeholder="Ej. mochila, laptop, medicina, contabilidad"
+        />
+      </div>
+
+      <div class="publish-actions">
+        <button type="button" class="btn" id="publishCancel">
+          Cancelar
+        </button>
+        <button type="submit" class="btn primary" id="publishSubmit">
+          Ofertar producto
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 EDUTOOLS · Bazar académico</div>
+      <div class="social-links">
+        <span>Síguenos:</span>
+        <a href="#" class="social-chip">Instagram</a>
+        <a href="#" class="social-chip">TikTok</a>
+        <a href="#" class="social-chip">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHAT FLOATING -->
+<button class="chat-toggle" id="chatToggle">
+</button>
+
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+      <span>Chat EDUTOOLS</span>
+      <button id="closeChat">×</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+  <div class="chat-message bot">
+    ¡Hola! 👋 Este es el chat entre comprador y vendedor. Aquí pueden ponerse de acuerdo sobre precio, entrega y detalles del producto.
+  </div>
+</div>
+
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." />
+      <button id="sendChat">Enviar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
