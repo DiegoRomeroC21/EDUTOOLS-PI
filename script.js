@@ -627,3 +627,11 @@ if (publishForm) {
   });
 }
 
+document.querySelectorAll('.modal-image img').forEach(img => {
+  img.onload = () => {
+    if (img.naturalHeight > img.naturalWidth) {
+      img.classList.add('vertical');
+    }
+  };
+});
+
